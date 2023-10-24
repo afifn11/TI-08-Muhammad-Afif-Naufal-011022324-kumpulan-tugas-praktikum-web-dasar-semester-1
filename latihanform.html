@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form input sensus penduduk</title>
+</head>
+<body>
+    <h2 style="text-align: center;">form input data penduduk</h2>
+    <form action="hasil.html" method="POST">
+        <fieldset>
+            <legend><b>Data Penduduk</b></legend>
+            <label for="name">Nama :</label>
+            <input type="text" name="Nama" placeholder="masukkan nama lengkap">
+            <br>
+            <br>
+            <label for="Agama">Agama :</label>
+            <select name="" id="Agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katholik">Katholik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+            </select>
+            <br>
+            <br>
+            <label for="jk">Jenis Kelamin :</label>
+            <input type="radio" name="jk" value="perempuan">
+            <label for="perempuan">perempuan</label>
+            <input type="radio" name="jk" value="laki-laki">
+            <label for="laki-laki">laki-laki</label>
+            <br>
+            <br>
+            <label for="alamat">Alamat :</label>
+            <textarea name="alamat" id="alamat" cols="20" rows="3"></textarea>
+            <br>
+            <br>
+            <label for="">foto</label>
+            <input type="file" name="foto" id="foto">
+            <br>
+            <br>
+            <input type="submit" value="kirim" name="tombol">
+
+        </fieldset>
+    </form>
+</body>
+</html>
