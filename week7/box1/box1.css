@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.yellow{
+    background-color: yellow;
+    width: 250px;
+    height: 650px;
+    border: 1px solid;
+}
+.red{
+    background-color: red;
+    width: 250px;
+    height: 650px;
+    border: 1px solid;
+}
+.green{
+    background-color: green;
+    width: 250px;
+    height: 650px;
+    border: 1px solid;
+}
+.blue{
+    background-color: blue;
+    width: 250px;
+    height: 650px;
+    border: 1px solid;
+}

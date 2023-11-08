@@ -1,0 +1,62 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-right: 20px;
+    padding: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+
+nav {
+    background-color: rgb(38, 41, 45);  
+    float: left; 
+    color: white; 
+    text-align: left; 
+    padding: 0px; 
+    text-decoration: none; 
+    display: inline;
+    width: 1200px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    width: 28%;
+    height: 400px;
+    font-size: 13px;
+}
+.tombol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tombol .simpan {
+    background-color: #2429d1;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+}
+.tombol .batal {
+    background-color: rgb(233, 11, 11);
+    margin: 20px;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+}

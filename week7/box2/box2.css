@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+}
+.green{
+    background-color: green;
+    width: 1200px;
+    height: 200px;
+    margin: 5px;
+}
+.yellow{
+    background-color: yellow;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+.orange{
+    background-color: orange;
+    width: 1000px;
+    height: 200px;
+    margin: 5px;
+}
+.aqua{
+    background-color: aqua;
+    width: 1000px;
+    height: 200px;
+    margin: 5px;
+}
