@@ -1,0 +1,26 @@
+nav{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: right;
+    padding: 0.5em;
+    margin: 0;
+}
+
+nav li{
+    margin: 0 1em;
+}
+
+nav li.logo{
+    margin-right: auto;
+}
+
+nav img.logo{
+    width: 30%;
+}
