@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        #imageDisplay {
+            margin-top: 20px;
+        }
+
+        #imageInfo {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Image Picker</h1>
+
+        <label for="imageSelector">Select Image:</label>
+        <select id="imageSelector" onchange="displayImage()">
+            <option value="./images/siji.jpg">Image 1</option>
+            <option value="./images/loro.jpg">Image 2</option>
+            <option value="./images/telu.jpg">Image 3</option>
+            <option value="./images/papat.jpg">Image 4</option>
+            <option value="./images/siji.jpg">Image 5</option>
+        </select>
+
+        <div id="imageDisplay"></div>
+        <div id="imageinfo"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

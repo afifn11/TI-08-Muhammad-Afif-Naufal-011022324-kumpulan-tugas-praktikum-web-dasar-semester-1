@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubah Warna</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+
+    <script>
+        function ubahWarna() {
+        var colorPicker = document.getElementById("colorPicker");
+        var hasil = document.getElementById("hasil");
+
+        var warna = colorPicker.value;
+        hasil.innerHTML = "Warna yang dipilih: " + warna;
+
+        document.body.style.backgroundColor = warna;
+        }
+    </script>
+    
+</head>
+<body>
+  <h1>Pilih Warna</h1>
+  <input type="color" id="colorPicker" onchange="ubahWarna()">
+  <div id="hasil" style="margin-top: 20px;"></div>
+
+</body>
+</html>
