@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page bg-secondary">
+  <div class="login-box">
+    <div class="card card-outline card-warning bg-dark">
+      <div class="card-header text-center">
+        <a class="h1"><b>e-</b>Ruang</a>
+      </div>
+      <div class="card-body">
+        <p class="login-box-msg fw-semibold">Login</p>
+
+        <form id="loginForm" onsubmit="return validateForm()">
+          <div class="input-group mb-3">
+            <input type="username" id="username" name="username" required class="form-control" placeholder="Username">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
+              </div>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="password" id="password" name="password" required class="form-control" placeholder="Password">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <button type="submit" class="btn btn-warning btn-block">Sign In</button>
+            </div>
+          </div>
+        </form>
+        <p class="mb-0">
+          <a href="register.html" class="text-center">Registrasi pengguna</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Login Berhasil -->
+  <div class="modal fade" id="modalLoginSuccess" tabindex="-1" role="dialog" aria-labelledby="modalLoginSuccessLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginSuccessLabel">Login Berhasil</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-success" role="alert">
+            <strong>Login berhasil!</strong> Anda telah berhasil masuk.
+            <span class="ml-2">&#10004;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    function validateForm() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Validasi sebagai pengguna biasa
+      if (username === "user" && password === "pass") {
+        // Munculkan modal "Login berhasil"
+        $('#modalLoginSuccess').modal('show');
+        // Setelah 2 detik, alihkan ke halaman pages.html
+        setTimeout(function () {
+          window.location.href = "pages.html";
+        }, 2000);
+        return false; // Agar form tidak submit secara default
+      }
+      // Validasi sebagai admin
+      else if (username === "admin" && password === "adminpass") {
+        // Jika berhasil login sebagai admin, arahkan ke halaman dashboard
+        window.location.href = "home.html";
+        return false;
+      }
+      // Tampilkan pesan kesalahan jika login gagal
+      else {
+        alert("Username atau password salah!");
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>

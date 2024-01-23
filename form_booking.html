@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form booking e-Ruang</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+</head>
+<body style="font-family: 'Instrument Serif', sans-serif; width: 100%;">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-3 border-bottom border-warning">
+        <div class="container">
+            <a class="navbar-brand fs-3 fw-bold fst-italic" href="#">e-<span style="color: gold;">Ruang.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-semibold" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pages.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fasilitas.html">Fasilitas Ruangan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Booking</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cari Ruangan" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                      </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mt-2">
+                  <li class="nav-item">
+                    <a href="index.html" class="btn btn-outline-warning fw-semibold btn-dark">Login</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-5">Form Booking Ruangan</h2>
+                <form onsubmit="submitForm()">
+                    <div class="form-group mb-3">
+                        <label for="nama" class="fw-semibold">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="fw-semibold">Alamat Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Masukkan alamat email" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="tanggal" class="fw-semibold">Tanggal Booking</label>
+                        <input type="date" class="form-control" id="tanggal" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="waktu" class="fw-semibold">Waktu Booking</label>
+                        <input type="time" class="form-control" id="waktu" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="ruangan" class="fw-semibold">Pilih Ruangan</label>
+                        <select class="form-control" id="ruangan" required>
+                            <option>Ruang Rapat</option>
+                            <option>Ruang Workshop</option>
+                            <option>Ruang Training Center</option>
+                            <option>Ruang Media Kreatif</option>
+                            <option>Lab Komputer</option>
+                            <option>Ruang Auditorium</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-block mb-3">Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+      <br>
+      <br>
+
+    
+      
+      <div class="row bg-dark border-bottom border-warning">
+        <p class="text-center fw-semibold text-light mt-3">
+            e- <span class="text-warning">Ruang</span>
+        </p>
+      </div>
+
+      <div class="row bg-dark">
+        <p style="text-align: center; color: #fff; font-size: small; padding-top: 1rem;">
+            Develope by
+            <span>
+              Mahasiswa STT Nurul Fikri &copy;2024
+            </span>
+        </p>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+    <script>
+      // script.js
+function submitForm() {
+    var nama = document.getElementById("nama").value;
+    var email = document.getElementById("email").value;
+    var tanggal = document.getElementById("tanggal").value;
+    var waktu = document.getElementById("waktu").value;
+    var ruangan = document.getElementById("ruangan").value;
+
+    // Buat objek untuk menyimpan data peminjam
+    var peminjam = {
+        nama: nama,
+        email: email,
+        tanggal: tanggal,
+        waktu: waktu,
+        ruangan: ruangan
+    };
+
+    // Dapatkan data peminjam yang sudah tersimpan (jika ada)
+    var daftarPeminjam = JSON.parse(localStorage.getItem("daftarPeminjam")) || [];
+
+    // Tambahkan data peminjam baru ke daftar
+    daftarPeminjam.push(peminjam);
+
+    // Simpan daftar peminjam ke localStorage
+    localStorage.setItem("daftarPeminjam", JSON.stringify(daftarPeminjam));
+
+    // Contoh: Tampilkan alert dengan informasi booking
+    alert("Terima kasih, " + nama + "! Anda telah berhasil melakukan booking pada " + tanggal + " pukul " + waktu + " untuk ruangan " + ruangan + ".");
+
+    // Clear form setelah submit (optional)
+    document.getElementById("nama").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("tanggal").value = "";
+    document.getElementById("waktu").value = "";
+    document.getElementById("ruangan").value = "";
+
+    // Mencegah form dari pengiriman default
+    return false;
+}
+
+
+    </script>
+
+</body>
+</html>
+</body>
+</html>

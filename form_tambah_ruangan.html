@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tambah Ruangan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!--Font Awesome Baru-->
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-warning elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="dist/img/eruang.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">e- </span><span class="text-warning">Ruang</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="info">
+          <a href="#" class="d-block">Admin e-Ruang</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-home"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="home.html" class="nav-link">
+                  <i class="fa-solid fa-pen nav-icon"></i>
+                  <p>Daftar Peminjam</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="daftar-ruangan.html" class="nav-link">
+                  <i class="fa-solid fa-list nav-icon"></i>
+                  <p>Daftar Ruangan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-plus nav-icon"></i>
+                  <p>Tambah Ruangan</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-right-from-bracket"></i>
+              <p onclick="confirmLogout()">
+                Log Out
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Tambah Ruangan</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Tambah Ruangan</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="container mt-5">
+            <form id="roomForm" onsubmit="validateForm(event)">
+              <div class="form-group">
+                <label for="namaRuangan">Nama Ruangan</label>
+                <input type="text" class="form-control" id="namaRuangan" placeholder="Masukkan nama ruangan" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="kategori">Kategori</label>
+                <select class="form-control" id="kategori" required>
+                  <option value="" disabled selected>Pilih kategori</option>
+                  <option value="meeting">Meeting Room</option>
+                  <option value="kelas">Kelas</option>
+                  <option value="lainnya">Lainnya</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <label for="deskripsiRuangan">Deskripsi Ruangan</label>
+                <textarea class="form-control" id="deskripsiRuangan" rows="3" placeholder="Masukkan deskripsi ruangan" required></textarea>
+              </div>
+          
+              <div class="form-group">
+                <label>Fasilitas Ruangan</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="fasilitasAC" value="AC">
+                  <label class="form-check-label" for="fasilitasAC">AC</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="fasilitasWifi" value="Wifi">
+                  <label class="form-check-label" for="fasilitasWifi">Wifi</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="fasilitasProyektor" value="Proyektor">
+                  <label class="form-check-label" for="fasilitasProyektor">Proyektor</label>
+                </div>
+              </div>
+          
+              <div class="form-group">
+                <label for="kapasitas">Kapasitas</label>
+                <input type="number" class="form-control" id="kapasitas" placeholder="Masukkan kapasitas ruangan" required>
+              </div>
+          
+              <div class="form-group">
+                <label for="lokasiRuangan">Lokasi Ruangan</label>
+                <input type="text" class="form-control" id="lokasiRuangan" placeholder="Masukkan lokasi ruangan" required>
+              </div>
+          
+              <button type="submit" class="btn btn-warning mb-3">Submit</button>
+              <button type="reset" class="btn btn-danger mb-3">Reset</button>
+            </form>
+          </div>
+          
+
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- Default to the left -->
+    <strong>Develope by Mahasiswa STT-NF &copy; 2024.</strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</script>
+<!--Fungsi log out-->
+<script>
+  function confirmLogout() {
+    const confirmLogout = confirm("Apakah Anda yakin akan keluar halaman?");
+    
+    if (confirmLogout) {
+      // Redirect ke halaman awal login
+      window.location.href = "index.html";
+    } else {
+      alert("Batal keluar.");
+    }
+  }
+</script>
+
+<script>
+  function validateForm(event) {
+    // Lakukan validasi formulir di sini
+    // Contoh validasi sederhana
+    var namaRuangan = document.getElementById('namaRuangan').value;
+    var kategori = document.getElementById('kategori').value;
+    var deskripsiRuangan = document.getElementById('deskripsiRuangan').value;
+    var kapasitas = document.getElementById('kapasitas').value;
+    var lokasiRuangan = document.getElementById('lokasiRuangan').value;
+
+    if (namaRuangan === "" || kategori === "" || deskripsiRuangan === "" || kapasitas === "" || lokasiRuangan === "") {
+      alert("Harap isi semua kolom formulir.");
+      event.preventDefault(); // Mencegah pengiriman formulir jika ada yang kosong
+    }
+  }
+</script>
+
+</body>
+</html>
